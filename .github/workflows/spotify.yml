@@ -1,27 +1,160 @@
-name: Spotify
+name: Spotify Now Playing
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  update:
+  update-spotify:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: Platane/snk@v3
+      - name: Get Spotify currently playing
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import requests
+          import html
+          import base64
 
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: spotify.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          client_id = os.environ["SPOTIFY_CLIENT_ID"]
+          client_secret = os.environ["SPOTIFY_CLIENT_SECRET"]
+          refresh_token = os.environ["SPOTIFY_REFRESH_TOKEN"]
 
-          plugin_music: yes
-          plugin_music_provider: spotify
+          basic = base64.b64encode(
+              f"{client_id}:{client_secret}".encode()
+          ).decode()
 
-          plugin_music_token: ${{ secrets.SPOTIFY_CLIENT_ID }}
-          plugin_music_secret: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-          plugin_music_refresh_token: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          token_response = requests.post(
+              "https://accounts.spotify.com/api/token",
+              headers={
+                  "Authorization": f"Basic {basic}",
+                  "Content-Type": "application/x-www-form-urlencoded",
+              },
+              data={
+                  "grant_type": "refresh_token",
+                  "refresh_token": refresh_token,
+              },
+              timeout=30,
+          )
+
+          token_response.raise_for_status()
+          access_token = token_response.json()["access_token"]
+
+          response = requests.get(
+              "https://api.spotify.com/v1/me/player/currently-playing",
+              headers={
+                  "Authorization": f"Bearer {access_token}"
+              },
+              timeout=30,
+          )
+
+          if response.status_code == 204 or not response.content:
+              track_name = "Not listening to Spotify"
+              artist_name = "Start playing something 🎵"
+              album_name = ""
+              album_url = ""
+          else:
+              response.raise_for_status()
+              data = response.json()
+
+              if not data.get("item"):
+                  track_name = "Not listening to Spotify"
+                  artist_name = "Start playing something 🎵"
+                  album_name = ""
+                  album_url = ""
+              else:
+                  item = data["item"]
+
+                  track_name = item["name"]
+                  artist_name = ", ".join(
+                      artist["name"] for artist in item["artists"]
+                  )
+                  album_name = item["album"]["name"]
+                  album_url = item["album"]["images"][0]["url"] if item["album"].get("images") else ""
+
+          def esc(value):
+              return html.escape(value or "")
+
+          svg = f'''<svg width="700" height="180" viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#111111"/>
+                <stop offset="100%" stop-color="#191919"/>
+              </linearGradient>
+            </defs>
+
+            <rect width="700" height="180" rx="24" fill="url(#bg)"/>
+            
+            <text x="35" y="42"
+                  font-family="Arial, sans-serif"
+                  font-size="22"
+                  font-weight="700"
+                  fill="#1DB954">
+              🎵 SPOTIFY NOW PLAYING
+            </text>
+
+            <text x="35" y="82"
+                  font-family="Arial, sans-serif"
+                  font-size="24"
+                  font-weight="700"
+                  fill="#ffffff">
+              {esc(track_name)}
+            </text>
+
+            <text x="35" y="113"
+                  font-family="Arial, sans-serif"
+                  font-size="18"
+                  fill="#b8b8b8">
+              {esc(artist_name)}
+            </text>
+
+            <text x="35" y="142"
+                  font-family="Arial, sans-serif"
+                  font-size="14"
+                  fill="#777777">
+              {esc(album_name)}
+            </text>
+
+            <circle cx="635" cy="90" r="38" fill="#1DB954"/>
+
+            <text x="635" y="100"
+                  text-anchor="middle"
+                  font-family="Arial, sans-serif"
+                  font-size="28"
+                  fill="#ffffff">
+              ♪
+            </text>
+          </svg>'''
+
+          os.makedirs("assets", exist_ok=True)
+
+          with open("assets/spotify.svg", "w", encoding="utf-8") as f:
+              f.write(svg)
+          PY
+
+      - name: Commit Spotify card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/spotify.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update Spotify Now Playing"
+          git push

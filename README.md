@@ -37,11 +37,15 @@ Apasionado por desarrollar aplicaciones modernas, automatizar procesos y crear s
 </div>
 
 ---
-<h2 align="center">🎵 Now Playing</h2>
+## 🎵 Now Playing
 
-<p align="center">
-  <img src="./assets/spotify.svg" alt="Spotify Now Playing" width="700"/>
-</p>
+<div align="center">
+
+<img src="./assets/spotify.svg" alt="Spotify Now Playing" width="700"/>
+
+</div>
+
+---
 
 ---
 # 🚀 Sobre mí

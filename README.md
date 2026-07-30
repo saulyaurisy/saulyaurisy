@@ -37,7 +37,13 @@ Apasionado por desarrollar aplicaciones modernas, automatizar procesos y crear s
 </div>
 
 ---
+<h2 align="center">🎵 Now Playing</h2>
 
+<p align="center">
+  <img src="./assets/spotify.svg" alt="Spotify Now Playing" width="700"/>
+</p>
+
+---
 # 🚀 Sobre mí
 
 ```csharp

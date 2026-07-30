@@ -37,10 +37,12 @@ Apasionado por desarrollar aplicaciones modernas, automatizar procesos y crear s
 </div>
 
 ---
-<h2 align="left">🎵 Now Playing</h2>
+## 🎵 Now Playing
 
 <div align="center">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=TU_ID&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false" />
+
+<img src="./assets/spotify.svg" alt="Spotify Now Playing" width="700"/>
+
 </div>
 
 ---

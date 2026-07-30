@@ -21,21 +21,21 @@
         font-size="24"
         font-weight="700"
         fill="#ffffff">
-    ADIVINO
+    Desenfocao&#x27;
   </text>
 
   <text x="35" y="113"
         font-family="Arial, sans-serif"
         font-size="18"
         fill="#b8b8b8">
-    Myke Towers, Bad Bunny
+    Rauw Alejandro
   </text>
 
   <text x="35" y="142"
         font-family="Arial, sans-serif"
         font-size="14"
         fill="#777777">
-    LA PANTERA NEGRA
+    VICE VERSA
   </text>
 
   <circle cx="635" cy="90" r="38" fill="#1DB954"/>

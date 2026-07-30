@@ -1,0 +1,50 @@
+<svg width="700" height="180" viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="100%" stop-color="#191919"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="700" height="180" rx="24" fill="url(#bg)"/>
+  
+  <text x="35" y="42"
+        font-family="Arial, sans-serif"
+        font-size="22"
+        font-weight="700"
+        fill="#1DB954">
+    🎵 SPOTIFY NOW PLAYING
+  </text>
+
+  <text x="35" y="82"
+        font-family="Arial, sans-serif"
+        font-size="24"
+        font-weight="700"
+        fill="#ffffff">
+    ADIVINO
+  </text>
+
+  <text x="35" y="113"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        fill="#b8b8b8">
+    Myke Towers, Bad Bunny
+  </text>
+
+  <text x="35" y="142"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#777777">
+    LA PANTERA NEGRA
+  </text>
+
+  <circle cx="635" cy="90" r="38" fill="#1DB954"/>
+
+  <text x="635" y="100"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="28"
+        fill="#ffffff">
+    ♪
+  </text>
+</svg>

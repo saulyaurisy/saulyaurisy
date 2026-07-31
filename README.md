@@ -2,29 +2,37 @@
 
 <img src="https://cdn.phototourl.com/free/2026-07-30-b150182c-a1a5-41e6-8c9b-9325d46cd0c7.png" width="100%" alt="Saúl Santos Banner"/>
 
-# 👋 ¡Hola! Soy **Saúl Santos Yauri**
+<h1 align="center">
+👋 ¡Hola! Soy Saúl Santos Yauri
+</h1>
 
-### 💻 Full Stack Developer • Software Engineering Student • 🇵🇪 Perú
+<h3 align="center">
+💻 Full Stack Developer • 🛡️ Cybersecurity Enthusiast • 🎓 Software Engineering Student 🇵🇪
+</h3>
 
 <p align="center">
-Apasionado por desarrollar aplicaciones modernas, automatizar procesos y crear soluciones escalables con <strong>ASP.NET Core</strong>, <strong>React</strong>, <strong>PostgreSQL</strong> e Inteligencia Artificial.
+
+Apasionado por desarrollar aplicaciones modernas, automatizar procesos y fortalecer la seguridad de sistemas mediante desarrollo de software, ciberseguridad e inteligencia artificial.
+
 </p>
 
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3500&pause=1000&color=F7931E&center=true&vCenter=true&width=900&lines=Full+Stack+Developer;ASP.NET+Core+Developer;React+Developer;PostgreSQL+Database;Automation+Developer;Artificial+Intelligence;Always+Learning+New+Technologies" alt="Typing SVG"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=24&duration=3000&pause=1000&color=F7931E&center=true&vCenter=true&width=900&lines=Full+Stack+Developer;Cybersecurity+Enthusiast;ASP.NET+Core+Developer;React+Developer;Linux+User;Ethical+Hacking;Building+Secure+Applications;Always+Learning"/>
+
 </p>
 
 <p align="center">
 
 <a href="mailto:saulcuenta09@gmail.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
 <a href="https://github.com/saulyaurisy">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
 </a>
 
-<a href="https://www.instagram.com/syxnb.10">
+<a href="https://instagram.com/syxnb.10">
 <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
 </a>
 
@@ -32,8 +40,11 @@ Apasionado por desarrollar aplicaciones modernas, automatizar procesos y crear s
 <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"/>
 </a>
 
-</p>
+<a href="https://www.linkedin.com/">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
 
+</p>
 </div>
 
 ---
@@ -48,37 +59,27 @@ Apasionado por desarrollar aplicaciones modernas, automatizar procesos y crear s
 ---
 # 🚀 Sobre mí
 
-```csharp
-public class SaulSantosYauri
-{
-    public string Role => "Full Stack Developer";
+```yaml
+Nombre: Saúl Santos Yauri
 
-    public string Location => "Lima, Perú 🇵🇪";
+Ubicación: Perú 🇵🇪
 
-    public string CurrentFocus => "Building scalable web applications";
+Rol:
+  - Full Stack Developer
+  - Cybersecurity Enthusiast
 
-    public string[] Technologies =>
-    [
-        "ASP.NET Core",
-        "React",
-        "PostgreSQL",
-        "Docker",
-        "Node.js",
-        "Artificial Intelligence"
-    ];
+Actualmente:
+  - ASP.NET Core
+  - React
+  - PostgreSQL
+  - Docker
+  - Linux
 
-    public string[] Interests =>
-    [
-        "Web Development",
-        "Software Architecture",
-        "Automation",
-        "Cybersecurity",
-        "UI/UX Design"
-    ];
-
-    public string Motto =>
-        "Turning ideas into scalable software.";
-}
+Aprendiendo:
+  - Ethical Hacking
+  - IA
+  - Arquitectura de Software
+  - Cloud
 ```
 
 <div align="center">
@@ -116,24 +117,51 @@ public class SaulSantosYauri
 
 ### ⚙️ Herramientas
 
-<img src="https://skillicons.dev/icons?i=docker,git,github,linux,vscode,visualstudio,figma,postman" />
+<img src="https://skillicons.dev/icons?i=docker,git,github,linux,vscode,visualstudio,figma,postman,bash" />
+<p>
 
 </div>
 
 ---
+
+# 🛡️ Cybersecurity
+
+✔ Kali Linux
+
+✔ OWASP Top 10
+
+✔ Network Analysis
+
+✔ Linux Hardening
+
+✔ Penetration Testing
+
+✔ ISO/IEC 27001
+
+✔ Vulnerability Assessment
+
+✔ Wireshark
+
+✔ Nessus Essentials
+
+✔ Secure Coding
+
+---
 # 📊 Estadísticas de GitHub
 
-<div align="center">
+<p align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=saulyaurisy&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=saulyaurisy&show_icons=true&theme=tokyonight"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=saulyaurisy&layout=compact&theme=tokyonight&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=saulyaurisy&layout=compact&theme=tokyonight"/>
 
-</div>
+</p>
 
-<div align="center">
+<p align="center">
 
-<img src="https://streak-stats.demolab.com?user=saulyaurisy&theme=tokyonight&hide_border=true"/>
+<img src="https://streak-stats.demolab.com?user=saulyaurisy&theme=tokyonight"/>
+
+</p>
 
 </div>
 
@@ -163,21 +191,16 @@ public class SaulSantosYauri
 | 🛒 **Azbel Sales Manager** | ERP para ventas, inventario, compras, reportes y dashboard. | ASP.NET Core • React • PostgreSQL |
 | 🤖 **WhatsApp Bot** | Bot multifuncional con administración de grupos, IA y automatizaciones. | Node.js • Baileys |
 | 🌐 **Landing Pages** | Sitios web modernos, rápidos y responsive para empresas. | React • TypeScript |
-| 🎮 **Empire Esports** | Overlays, herramientas y diseño para torneos y transmisiones. | HTML • CSS • OBS |
 
 ---
 
 # 🐍 Contribuciones
 
-<div align="center">
+<p align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saulyaurisy/saulyaurisy/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/saulyaurisy/saulyaurisy/output/github-contribution-grid-snake.svg">
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/saulyaurisy/saulyaurisy/output/github-contribution-grid-snake.svg">
-</picture>
+<img src="https://raw.githubusercontent.com/saulyaurisy/saulyaurisy/pacman-output/pacman-contribution-graph-dark.svg">
 
-</div>
+</p>
 
 ---
 

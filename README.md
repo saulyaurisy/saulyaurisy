@@ -90,6 +90,8 @@ Aprendiendo:
 
 🤖 Creando **Bots para WhatsApp**
 
+🤖 Creando **Bots para Discord**
+
 🌐 Diseñando **Landing Pages modernas**
 
 📚 Aprendiendo **Arquitectura de Software**

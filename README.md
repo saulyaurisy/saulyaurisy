@@ -193,7 +193,8 @@ Aprendiendo:
 | 🛒 **Azbel Sales Manager** | ERP para ventas, inventario, compras, reportes y dashboard. | ASP.NET Core • React • PostgreSQL |
 | 🤖 **WhatsApp Bot** | Bot multifuncional con administración de grupos, IA y automatizaciones. | Node.js • Baileys |
 | 🌐 **Landing Pages** | Sitios web modernos, rápidos y responsive para empresas. | React • TypeScript |
-
+| 🌐 **Discord Bot - Scrimstats bot** | Gestión y análisis de scrims, estadísticas de jugadores y equipos, resultados, rankings y seguimiento de partidas. | TypeScript • JavaScript (Node.js) • Python |
+| 🌐 **Discord Bot - ScrimVision bot** | Procesamiento de partidas, detección de ganador y MVP, estadísticas y tablas generales, análisis de imágenes mediante OCR | TypeScript • JavaScript (Node.js) • Python • PaddleOCR |
 ---
 
 # 🐍 Contribuciones

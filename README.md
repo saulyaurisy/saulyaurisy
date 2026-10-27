@@ -32,7 +32,7 @@ Apasionado por desarrollar aplicaciones modernas, automatizar procesos y fortale
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
 </a>
 
-<a href="https://instagram.com/syxnb.10">
+<a href="https://instagram.com/sxysm.ss">
 <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
 </a>
 
